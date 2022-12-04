@@ -1,0 +1,136 @@
+/* Master styles */
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+}
+
+/* Nav styles */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-link-wrapper {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    height: 22px;
+    border-bottom: solid 1px transparent;
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: solid 1px black;
+
+}
+
+.nav-link-wrapper a:hover {
+    color: black;
+    
+}
+
+.brand {
+    text-transform: uppercase;
+}
+
+.active-nav-link {
+    border-bottom: solid black 1px;
+}
+
+.active-nav-link a {
+    color: black !important;
+}
+
+/* Portfolio styles */
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-item-wrapper:hover .portfolio-img-background {
+    filter: brightness(10%);
+    transition: 1s;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.title {
+    width: 50%;
+    margin-bottom: 20px;    
+}
+
+.title, .subtitle {
+    color: transparent;
+    transition: color 0.5s;
+}
+
+.portfolio-item-wrapper:hover .title, .portfolio-item-wrapper:hover .subtitle {
+    color: white;
+    font-weight: 600;
+}
+
+/* About page styles */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.profile-image-wrapper {
+    position: relative;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    position: absolute;
+    top: 38px;
+}
+
+.profile-content-wrapper {
+    padding: 10px 30px 30px 10px;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}

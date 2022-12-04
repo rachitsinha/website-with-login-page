@@ -1,0 +1,35 @@
+section#main-section {
+    position: relative;
+}
+
+#side-nav-wrapper {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 700px;
+    color: whitesmoke;
+    background-color: rgba(50, 50, 50, 0.5);
+    overflow: hidden;
+}
+
+#side-nav-wrapper:hover {
+    width: 150px;
+    transition: width 0.5s;
+}
+
+ul#side-nav {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav-item {
+    height: 30px;
+    padding: 10px;
+}
+
+.side-nav-item:hover {
+    background-color: rgba(150, 50, 50, 0.5);
+    transition: background-color 0.5s;
+    cursor: pointer;
+    font-weight: bolder;
+}

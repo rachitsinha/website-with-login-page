@@ -1,0 +1,160 @@
+* {
+    font-family: 'Lato', sans-serif;
+}
+.container {
+    width: 1280px;
+    height: 100vh;
+    margin: auto;
+}
+
+main {
+    border: #dfdfdf solid 1px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    background-color: #dfdfdf;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+.searchbox-wrapper {
+    width: 500px;
+}
+
+.searchbox-wrapper input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px;
+}
+
+.nav-items-wrapper {
+    background-color: rgba(180, 180, 180, 0.7);
+    height: 100%;
+    width: 210px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.nav-item {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: solid 1px transparent;
+}
+
+.nav-item:hover {
+    border-bottom: solid black 1px;
+    cursor: pointer;
+    transition: border-bottom 1s;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
+.main-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-image {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    background-color: #f7fffb;
+}
+
+.login-form-container {
+    margin-top: 75px;
+}
+
+.title {
+    text-align: center;
+}
+
+.social-network-login-title {
+    text-align: center;
+    color: gray;
+}
+
+.social-network-login-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.social-network-icon {
+    margin: 0 5px;
+}
+
+.partition-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    opacity: 0.5;
+    font-size: 0.7em;
+}
+
+.hr-wrapper {
+    width: 150px;
+    margin: 2px 5px;
+}
+
+.login-input-wrapper, .login-action-wrapper {
+    margin: auto;
+    margin-bottom: 10px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-input-wrapper input {
+    height: 35px;
+    border-radius: 20px;
+    width: 300px;
+    padding: 0 15px;
+    background-color: #dcfae9;
+    border-color: transparent;
+}
+
+.login-action-wrapper input {
+    height: 35px;
+    border-radius: 30px;
+    width: 200px;
+    background-color: #42ad8d;
+    border-color: transparent;
+    color: #ffffff;
+}
+
+input[type='button']:hover {
+    cursor: pointer;
+}
+
+.nav-items-wrapper .active {
+    border-bottom: solid 1px black;
+}

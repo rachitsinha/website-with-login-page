@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learning HTML</title>
+</head>
+
+<body>
+    <label for="cars">Choose model</label>
+    <select name="cars" id="selectCars" required>
+        <option value="Toyota">Toyota</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Audi">Audi</option>
+        <option value="Honda">Honda</option>
+    </select>
+
+    <fieldset>
+        <legend>Please chooose your preferred contact method</legend>
+        <input type="radio" name="contactMethod" id="radioEmail">
+            <label for="radioEmail">Email</label>
+        </input>
+        <input type="radio" name="contactMethod" id="radioPhone">
+            <label for="radioPhone">Phone</label>
+        </input>
+        <input type="radio" name="contactMethod" id="radioNone" checked>
+            <label for="radioNone">None</label>
+        </input>
+    </fieldset>
+
+    <fieldset>
+        <legend>Please select your add-ons</legend>
+        <div>
+            <input type="checkbox" name="addon" id="chk1" checked>
+            <label for="chk1">Diet Coke</label>
+        </div>
+        <div>
+            <input type="checkbox" name="addon" id="chk2">
+            <label for="chk2">Fries</label>
+        </div>
+        <div>
+            <input type="checkbox" name="addon" id="chk3">
+            <label for="chk3">Pastry</label>
+        </div>
+        
+    </fieldset>
+    
+
+</body>
+
+</html>
